@@ -1,9 +1,17 @@
 # v2 
 
+## Validation
+
+- Check that proximo works with a simple untyped cli where you pass in strings
+- Use inlets to proxy locally. Is faster to test.https://github.com/alexellis/inlets
+- Check you can stil gen a client. For examle in Dart. Use this as a base: https://github.com/amsokol/flutter-grpc-tutorial
+ - If we cant gen clients then i have to embed the golang client insie flutter using gomobile and empire fox: https://github.com/empirefox
+
+- Not sure what else yet.
 
 ## Code
 
-### BUS
+### GRPC bus
 https://github.com/uw-labs/proximo
 
 https://github.com/uw-labs/proximo/tree/master/proximo-client
