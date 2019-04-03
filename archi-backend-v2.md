@@ -32,9 +32,18 @@ https://github.com/minio/minsql
 - Muation
   - Can easily have proximo call into it and out of it. Just on the way in for a mutation, check it works and then send the CRUD event back out on the topic.
 - Select
-  - Send CRED event back out and let Proximo do the durable inbox to the correct clients
+  - Send CRUD event back out and let Proximo do the durable inbox to the correct clients Its all here: https://docs.min.io/docs/minio-bucket-notification-guide.html#NATS
 - Subscription on Select
   - We need to filter ( e.g Select * from Users where Firstname="ged ). SO we need to apply the predicate on the events being fired to the clients. Make sense !!!
+  
+### Indexing Server
+https://github.com/mosuka/blast/
+
+When a CRUD event occurs in minio, it wil be routed via NATS to BLast.
+BLast can then grab the doc out of mini and index it.
+Very simple.
+It can then fired an IndexEvent for any interested subscribes to get.
+
  
 
 
@@ -51,7 +60,7 @@ Packet
 - https://www.packet.com/cloud/servers/c1-large-arm/
 
 Scaleway
-- 3 euor a month !!
+- https://www.scaleway.com/
 
 
 
