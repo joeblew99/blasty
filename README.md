@@ -4,10 +4,11 @@
 
 Here is the big picture flow. Its a CQRS system for FLutter and Microservices.
 The FLow is:
-1. The Flutter client makes a mutations and sents it back to the NATS --> ANY Read/ Write System
+1. The Flutter client makes a mutation and sents it back to the Server NATS --> ANY Read/ Write System that subscribes. It coudl be many R/W systems.
 2. The ANY RW System does what it wants localy ( its has its own internal state ) and then updates our MiniSQL Read Store by sending CUD events --> NATS --> Minisql Store. 
 3. The MiniSQL Store carries out the CRD OP, and sends CRD Events --> NATS --> Flutter.
-4. Flutter slip streams the CRD Op into the View
+4. Flutter slip streams the CRD Op into the View. 
+
 
 Nice things:
 
