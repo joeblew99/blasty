@@ -1,6 +1,12 @@
 # archi-frontend
 
-GRPC is coming from the backend
+GRPC is coming from the backend. See that doc.
+
+The whole point is to rmeove the need for any FLux, Store logic on the Flutter code.
+There is a One to One mapping of a Flutter VIew Model to a Server Bucket.
+This is similar to Google FireStore but much more elegant and simple.
+
+
 
 # Slippy Stream Phase
 
