@@ -50,5 +50,8 @@ https://www.raspberrypi.org/products/compute-module-3/
 Packet
 - https://www.packet.com/cloud/servers/c1-large-arm/
 
+Scaleway
+- 3 euor a month !!
+
 
 
