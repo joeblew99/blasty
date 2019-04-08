@@ -88,6 +88,8 @@ dep-status:
 
 
 ### Git PR
+	# https://scotch.io/tutorials/github-pull-requests-extension-for-visual-studio-code#toc-create-a-github-project
+	
 
 	# in joe, set remote
 
