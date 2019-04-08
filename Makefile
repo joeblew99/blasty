@@ -87,6 +87,13 @@ dep-status:
 	cd $(LIB_FSPATH) && git status
 
 
+### Git PR
+
+	# in joe, set remote
+
+
+
+
 
 dep-all: dep-os dep dep-modules
 	# get all deps
@@ -239,4 +246,8 @@ flu-desk-run:
 
 flu-desk-runhot:
 	cd $(EX_FLU_FSPATH) && hover run --target $(EX_FLU_FSPATH)/lib/main.dart
+
+
+
+
 	
